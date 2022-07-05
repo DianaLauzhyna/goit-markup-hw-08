@@ -1,10 +1,45 @@
+
 .team-section {
   background-color: var(--specials-icon-color);
+  display: flex;
+  justify-content: center;
   &__list {
+    flex-wrap: wrap;
     display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+      flex-wrap: wrap;
+      display: flex;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
   }
+
+
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media screen and (min-width: 1280px) {
+     margin-bottom: 50px; 
+    }
+  }
+
+  &__image {
+    width: 450px;
+    height: 460px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+    width: 354px;
+    height: 374px;
+    }
+    @media screen and (min-width: 1280px) {
+    width: 270px;
+    height: 260px;
+    }
   }
 
   &__item {
@@ -13,10 +48,26 @@
     border-radius: 0px 0px 4px 4px;
     border: 1px solid initial;
     background-color: var(--main-color);
+    margin-bottom:30px ;
+    &:last-child {
+    margin-bottom: 0;
+  }
+    @media screen and (min-width: 768px) and (max-width: 1279px) { 
     margin-right: 30px;
+    &:last-child {
+    padding-right: 0;
+    }
+    margin-bottom: 30px;
+
+    }
+    @media screen and (min-width: 1280px) {
+    margin-right: 30px;
+    margin-bottom: 0;
     &:last-child {
       padding-right: 0;
     }
+    }
+
   }
 
   &__subtitle {

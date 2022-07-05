@@ -1,13 +1,52 @@
- .mobile-menu {
+.mobile-header {
+  display: block;
+  &__logo {
+    margin-right: 276px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    align-items: center;
+  }
+  &__logo-one {
+    color: var(--link-color);
+  }
+  &__logo-two {
+    color: var(--modal-button-color);
+  }
+  &__button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  &__icon {
+    &:hover {
+      fill: var(--link-color);
+    }
+    &:focus {
+      fill: var(--link-color);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 480px;
     height: 100%;
     background-color: var(--main-color);
- }
+  }
 
-.mobile-menu__container {
-    padding-top: 48px ;
+  .mobile-menu__container {
+    padding-top: 48px;
     padding-left: 40px;
     padding-bottom: 48px;
     max-width: 480px;
@@ -17,15 +56,84 @@
     flex-direction: column;
 
     background-color: var(--main-color);
+  }
+
+  .mobile-nav {
+    margin-bottom: 302px;
+    &__link {
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.175;
+      letter-spacing: 0.02em;
+      color: #212121;
+      text-decoration: none;
+    }
+    &__item {
+      padding-bottom: 32px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+.mobile-inf {
+    &__list {
+        padding-bottom: 32px;
+    }
+    &__link-tel{
+font-weight: 500;
+font-size: 34px;
+line-height: 1.176;
+letter-spacing: 0.02em;
+color: #2196F3;
+text-decoration: none;
+    }
+    &__link-mail {
+font-weight: 500;
+font-size: 24px;
+line-height: 1.167;
+letter-spacing: 0.02em;
+color: #757575;
+text-decoration: none;
+    }
+}
+.mobile-socials {
+    display: inline-flex;
+
+    &__item {
+        padding-right: 20px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    
+    &__link {
+        text-decoration: none;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: #2196F3;
+    }
+}
 }
 
 
-.mobile-nav {
-    margin-bottom: auto;
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .mobile-header,
+  .mobile-header__menu,
+  .mobile-header__logo,
+  .mobile-menu {
+    display: none;
+  }
 }
-
-
-
-.mobile-nav__list
-.mobile-nav__item
-.mobile-nav__link
+@media screen and (min-width: 1280px) {
+  .mobile-header,
+  .mobile-header__menu,
+  .mobile-header__logo,
+  .mobile-menu {
+    display: none;
+  }
+}
