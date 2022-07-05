@@ -1,0 +1,43 @@
+//variables
+@import "./utils/vars";
+
+//base styles
+
+@import "./components/reset";
+
+@import "./components/container";
+
+@import "./components/base";
+
+//components styles 
+
+//modal 
+@import "./components/modal";
+
+//header
+
+@import "./components/header";
+
+@import "./components/logo";
+//first section
+@import "./components/hero";
+//second section
+@import "./components/specials";
+//third section
+@import "./components/services";
+//fourth section
+
+@import "./components/team";
+@import "./components/socials";
+
+//fifth section 
+
+@import "./components/customer";
+//footer
+@import "./components/footer";
+
+//portfolio
+//buttons
+@import "./components/buttons";
+//cards
+@import "./components/cards";

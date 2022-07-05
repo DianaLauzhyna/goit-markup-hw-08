@@ -1,0 +1,55 @@
+.projects {
+  &__title {
+    display: none;
+  }
+  &__list-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__item-buttons {
+    margin-right: 8px;
+  }
+  &__button {
+    background: var(--specials-icon-color);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    border: 0;
+    font-family: inherit;
+    padding: 6px 22px;
+    text-align: center;
+    appearance: none;
+    cursor: pointer;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
+&__button {  
+&:hover,
+&:focus {
+  background-color: var(--link-color);
+  color: var(--main-color);
+}}
+
+&__item-buttons
+{&:last-child {
+  margin-right: 0;
+}}
+}

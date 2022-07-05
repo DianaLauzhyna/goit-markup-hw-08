@@ -1,0 +1,47 @@
+.hero-section {
+  background-color: var(--footer-hero-background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/headerimg.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding-bottom: 30px;
+  }
+  &__button {
+    background: var(--link-color);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    font-family: inherit;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+    border: 0;
+    appearance: none;
+    cursor: pointer;
+    padding: 10px 32px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--background-hover-color);
+    }
+  }
+}
