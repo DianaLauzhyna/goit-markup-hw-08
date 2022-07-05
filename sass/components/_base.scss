@@ -25,12 +25,6 @@ img {
   pointer-events: none;
 }
 
-::placeholder {
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
-  color: var(--placeholder-color);
-}
 
 .visually-hidden {
   position: absolute;

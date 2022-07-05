@@ -1,0 +1,31 @@
+ .mobile-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+ }
+
+.mobile-menu__container {
+    padding-top: 48px ;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    max-width: 480px;
+    max-height: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--main-color);
+}
+
+
+.mobile-nav {
+    margin-bottom: auto;
+}
+
+
+
+.mobile-nav__list
+.mobile-nav__item
+.mobile-nav__link

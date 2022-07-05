@@ -1,8 +1,9 @@
+
 .hero-section {
   background-color: var(--footer-hero-background-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -11,17 +12,30 @@
     url("../images/headerimg.jpg");
   background-size: cover;
   background-position: center;
-  max-width: 1600px;
+  max-width: 767px;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 768px) { 
+    max-width: 1279px;  
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1600px;  
+    padding-top: 200px;
+    padding-bottom: 200px; 
+  }
   &__title {
+    text-align: center;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.615;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-color);
     padding-bottom: 30px;
+  @media screen and (min-width: 1280px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
   &__button {
     background: var(--link-color);
