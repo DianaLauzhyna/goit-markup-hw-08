@@ -1911,12 +1911,6 @@ footer {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-header__icon:hover {
-  fill: var(--link-color);
-}
-.mobile-header__icon:focus {
-  fill: var(--link-color);
-}
 
 .mobile-menu {
   position: fixed;
