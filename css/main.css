@@ -695,8 +695,8 @@ header .container {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/headerimg.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/headerimg.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_images/header_mb_img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_images/header_mb_img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -704,8 +704,16 @@ header .container {
   margin-right: auto;
   margin-left: auto;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), "../images/header_images/header_mb_img@2x.jpg";
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), "../images/header_images/header_mb_img@2x.jpg";
+  }
+}
 @media screen and (min-width: 767px) and (max-width: 1279px) {
   .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_images/header_tab_img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_images/header_tab_img.jpg");
     max-width: 1279px;
     background-size: cover;
     background-position: center;
@@ -713,13 +721,27 @@ header .container {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), "../images/header_images/header_tab_img@2x.jpg";
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), "../images/header_images/header_tab_img@2x.jpg";
+  }
+}
 @media screen and (min-width: 1280px) {
   .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_images/img_dec.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_images/img_dec.jpg");
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-size: cover;
     background-position: center;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), "../images/header_images/img_dec@2x.jpg";
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), "../images/header_images/img_dec@2x.jpg";
   }
 }
 .hero-section__title {
