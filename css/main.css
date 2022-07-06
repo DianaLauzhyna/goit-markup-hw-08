@@ -1929,6 +1929,15 @@ footer {
   visibility: visible;
 }
 
+.mobile-header__button:hover .mobile-header__icon,
+.mobile-header__button:focus .mobile-header__icon {
+  color: var(--link-color);
+}
+
+.button-close__icon {
+  fill: currentColor;
+}
+
 .mobile-menu__container {
   padding-top: 48px;
   padding-bottom: 48px;
