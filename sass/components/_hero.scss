@@ -30,7 +30,7 @@ background-image: linear-gradient(
   max-width: 767px;
   margin-right: auto;
   margin-left: auto;
-  @media screen and (min-width: 767px) and (max-width:1279px) { 
+  @media screen and (min-width: 767px) and (max-width:1199px) { 
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -54,7 +54,7 @@ background-image: linear-gradient(
     margin-right: auto;
     margin-left: auto;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -87,7 +87,7 @@ background-image: linear-gradient(
     text-transform: uppercase;
     color: var(--main-color);
     padding-bottom: 30px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
     }

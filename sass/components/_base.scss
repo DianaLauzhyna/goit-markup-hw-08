@@ -25,7 +25,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -61,7 +61,7 @@ img {
   color: var(--title-color);
   text-align: center;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.167;
   }

@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-  <header>
-      <div class="container">
+    <header>
+      <div class="container header-dekstop-tablet">
         <a href="./index.html" class="logo"
           ><span class="logo__one">Web</span
           ><span class="logo__two">Studio</span></a
@@ -23,22 +23,25 @@
         <nav class="site-nav">
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link"
-                >Студия</a
-              >
+              <a href="./index.html" class=" site-nav__link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link current">Портфолио</a>
             </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-inf">
           <li class="contact-inf__list">
             <a href="mailto:info@example.com" class="contact-inf__link">
-              <svg class="contact-inf__icon" width="16px" height="12px" fill="#757575">
+              <svg
+                class="contact-inf__icon"
+                width="16px"
+                height="12px"
+                fill="#757575"
+              >
                 <use href="./images/svg_icons/sprite.svg#mailletter"></use>
               </svg>
               info@example.com</a
@@ -59,66 +62,68 @@
         </ul>
       </div>
 
-      <div class="container mobile-header"> 
+      <div class="container mobile-header">
         <a href="./index.html" class="mobile-header__logo"
           ><span class="mobile-header__logo-one">Web</span
           ><span class="mobile-header__logo-two">Studio</span></a
         >
-        <div class="mobile-header__menu"><button type="button" class="mobile-header__button is-open" data-menu-button>
-          <svg class="mobile-header__icon" width="24px" height="16px" >
-            <use href="./images/svg_icons/sprite.svg#menu"></use>
-          </svg>
-        </button>
-      </div>
-      </div>
-
-    <div class="mobile-menu " data-menu>
-          <div class="mobile-menu__close">
-          <button type="button" class="mobile-menu__button">
-            <svg class="mobile-menu-button-close__icon" width="18px" height="18px" fill="#000000">
-              <use href="./images/svg_icons/sprite.svg#close"></use>
+        <div class="mobile-header__menu">
+          <button type="button" class="mobile-header__button play_btn" data-menu-button>
+            <svg class="mobile-header__icon" width="24px" height="16px">
+              <use href="./images/svg_icons/sprite.svg#menu" class="menu-open"></use>
+              <use href="./images/svg_icons/sprite.svg#close" class="menu-close"></use>
             </svg>
           </button>
-                </div>
-        <div class="mobile-menu__container">
+        </div>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__container is-open">
           <nav class="mobile-nav">
             <ul class="mobile-nav__list">
               <li class="mobile-nav__item">
-                <a href="./index.html" class="current mobile-nav__link"
+                <a href="./index.html" class=" mobile-nav__link"
                   >Студия</a
                 >
               </li>
-              <li class="mobile-nav__item current">
-                <a href="./portfolio.html" class="mobile-nav__link"
+              <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link current"
                   >Портфолио</a
                 >
               </li>
-              <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Контакты</a>
+              </li>
             </ul>
           </nav>
           <ul class="mobile-inf">
             <li class="mobile-inf__list">
               <a href="tel:+380991111111" class="mobile-inf__link-tel">
-                +38 099 111 11 11</a>
+                +38 099 111 11 11</a
+              >
             </li>
             <li class="mobile-inf__list">
-            <a href="mailto:info@example.com" class="mobile-inf__link-mail">
-              info@example.com</a
-            >
+              <a href="mailto:info@example.com" class="mobile-inf__link-mail">
+                info@example.com</a
+              >
             </li>
-        <ul class="mobile-socials">
-          <li class="mobile-socials__item"></li>
-          <a href="" class="mobile-socials__link">Instagram</a>
-          <li class="mobile-socials__item"></li>
-          <a href="" class="mobile-socials__link">Twitter</a>
-          <li class="mobile-socials__item"></li>
-          <a href="" class="mobile-socials__link">Facebook</a>
-          <li class="mobile-socials__item"></li>
-          <a href="" class="mobile-socials__link">Linkedin</a>
-        </ul>
+          </ul>
+          <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link">Linkedin</a>
+            </li>
+          </ul>
         </div>
       </div>
-
     </header>
     <main>
       <section class="container section projects">
@@ -410,5 +415,6 @@
          </ul>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -12,13 +12,13 @@ footer {
   justify-content: center;
 
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) { 
+  @media screen and (min-width: 768px) and (max-width:1199px) { 
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline; 
-  
+    align-items: center;; 
   }
-  @media screen and (min-width: 1280px) {
+
+  @media screen and (min-width: 1200px) {
   display: flex;
   align-items: baseline;  
   }
@@ -30,12 +30,12 @@ margin-right: auto;
 margin-bottom: 60px;
 
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width:1199px) {
    margin-right: 165px;
    margin-bottom:0;
   
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
     margin-bottom: 0;
   }
@@ -44,10 +44,11 @@ margin-bottom: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: 768px) and (max-width: 1279px) { 
-  display: block;
+    @media screen and (min-width: 768px) and (max-width:1199px) { 
+    display: block;
+    
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       display: block;
     }
   }
@@ -55,12 +56,7 @@ margin-bottom: 60px;
     margin-top: 20px;
   }
 
-  &__item {
-    margin-bottom: 9px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+  
   &__logo {
     display: flex;
     align-items: center;
@@ -71,15 +67,15 @@ margin-bottom: 60px;
     font-family: "Raleway";
     font-weight: 700;
     letter-spacing: 0.03em;
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
     }
     
-    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+    @media screen and (min-width: 768px) and (max-width:1199px) { 
   display: block;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       display: block;
     }
   }
@@ -99,10 +95,10 @@ margin-bottom: 60px;
     &:focus {
       color: var(--link-color);
     }
-    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+    @media screen and (min-width: 768px) and (max-width:1199px) { 
       margin-bottom: 60px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 60px;
     }
     
@@ -134,10 +130,10 @@ margin-bottom: 60px;
 .socials-footer {
 margin-right: 0;
 margin-bottom: 60px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) { 
+  @media screen and (min-width: 768px) and (max-width:1199px) { 
   
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
    margin-right: 93px; 
   }
   
@@ -153,10 +149,10 @@ margin-bottom: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+    @media screen and (min-width: 768px) and (max-width:1199px) { 
   display: block;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       display: block;
       }
   }
@@ -164,16 +160,15 @@ margin-bottom: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 768px) and (max-width: 1279px) { 
+  @media screen and (min-width: 768px) and (max-width:1199px) { 
   display: block;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     display: block;
   }
 }
 
   &__item {
-
 
     display: inline-block;
     margin-right: 10px;
@@ -222,12 +217,13 @@ margin-bottom: 60px;
     display: flex;
   align-items: center;
   justify-content: center;
-    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+    @media screen and (min-width: 768px) and (max-width:1199px) { 
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
     display: block;
     }
   }
@@ -252,18 +248,18 @@ margin-bottom: 60px;
     appearance: none;
     cursor: pointer;
     margin-top: 18px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+    @media screen and (min-width: 768px) and (max-width:1199px) { 
       margin-top: 20px;
           
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       margin-top: 0;
     }
     
   }
   &__input {
   
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       width: 358px;
     
     }
@@ -291,13 +287,14 @@ margin-bottom: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+
+    @media screen and (min-width: 768px) and (max-width:1199px) { 
       display: flex;
       align-items: center;
       justify-content: center;
   
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       display: inline-block;
     }
   }
@@ -306,3 +303,9 @@ margin-bottom: 60px;
 .sub {
   padding-right: 10px;
 }
+
+.info-block__item {
+  padding-bottom: 9px;
+  &:last-child {
+padding-bottom: 0;
+  }}
