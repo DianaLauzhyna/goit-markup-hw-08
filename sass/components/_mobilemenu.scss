@@ -59,6 +59,9 @@
 
   .mobile-nav {
     margin-bottom: 302px;
+    .current {
+      color: var(--link-color);
+    }
     &__link {
       font-family: "Roboto";
       font-weight: 500;
@@ -67,7 +70,15 @@
       letter-spacing: 0.02em;
       color: #212121;
       text-decoration: none;
-    }
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      padding-top: 32px;
+      padding-bottom: 32px;
+      &:hover,
+      &:focus {
+      color: var(--link-color);
+    }}
     &__item {
       padding-bottom: 32px;
       &:last-child {

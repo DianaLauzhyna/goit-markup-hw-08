@@ -1905,6 +1905,9 @@ footer {
 .mobile-nav {
   margin-bottom: 302px;
 }
+.mobile-nav .current {
+  color: var(--link-color);
+}
 .mobile-nav__link {
   font-family: "Roboto";
   font-weight: 500;
@@ -1913,6 +1916,17 @@ footer {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: var(--link-color);
 }
 .mobile-nav__item {
   padding-bottom: 32px;
