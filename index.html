@@ -273,8 +273,9 @@
           <h2 class="services-section__title">Чем мы занимаемся</h2>
           <ul class="services-section__list">
             <li class="services-section__item">
-                <img
-                  src="./images/img6(1).jpg"
+                <img  
+          srcset="./images/dekstop_image/dekstop-service-image-one.jpg 1x, ./images/dekstop_image/dekstop-service-image-one@2x.jpg 2x"
+                src="./images/dekstop_image/dekstop-service-image-one.jpg "
                   alt="Фото 1 секції"
                   width="370"
                   height="294"
@@ -283,7 +284,8 @@
             </li>
             <li class="services-section__item" >
                 <img
-                  src="./images/img7(1).jpg"
+    srcset="./images/dekstop_image/dekstop-service-image-two.jpg 1x, ./images/dekstop_image/dekstop-service-image-two@2x-1.jpg 2x"
+                  src="./images/dekstop_image/dekstop-service-image-two.jpg"
                   alt="Фото 2 секції"
                   width="370"
                   height="294"
@@ -291,8 +293,8 @@
             <h3 class="services-section__subtitle">Мобильные приложения</h3>
             </li>
             <li class="services-section__item">
-                <img
-                  src="./images/img5(1).jpg"
+                <img    srcset="./images/dekstop_image/dekstop-service-image-three.jpg 1x, ./images/dekstop_image/dekstop-service-image-three@2x-2.jpg 2x"
+                src="./images/dekstop_image/dekstop-service-image-three.jpg "
                   alt="Фото 3 секції"
                   width="370"
                   height="294"
@@ -308,12 +310,13 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__item item-box">
-              <img
-                src="./images/img1(1).jpg"
-                alt="Фото 1 секції"
-
-                class="team-section__image"
-              />
+            <picture>
+              <source media="(min-width: 1280px)" srcset="./images/team/df-one270.jpg 1x, ./images/team/df-one540@2x-3.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/team/tf-one.jpg 1x, ./images/team/tf-one@2x.jpg 2x">
+              <source media="(max-width: 767px)" srcset="./images/team/mb-one450.jpg 1x, ./images/team/mb-one900@2x.jpg 2x">
+            <img src="./images/team/mb-one450.jpg" alt="foto one" width="450"
+            height="460">
+            </picture>
               <div class="team-section__inf">
                 <h3 class="team-section__subtitle">Игорь Демьяненко</h3>
                 <p class="team-section__text">Product Designer</p>
@@ -385,12 +388,14 @@
               </div>
             </li>
             <li class="team-section__item item-box">
-              <img
-                src="./images/img3(1).jpg"
-                alt="Фото 2 секції"
+              <picture>
+                <source media="(min-width: 1280px)" srcset="./images/team/df-two270.jpg 1x, ./images/team/df-two540@2x-4.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/tf-two.jpg 1x, ./images/team/tf-two@2x-1.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/mb-two450.jpg 1x, ./images/team/mb-two900@2x-1.jpg 2x">
+              <img src="./images/team/mb-two450.jpg" alt="foto one" width="450"
+              height="460">
+              </picture>
 
-                class="team-section__image"
-              />
               <div class="team-section__inf">
                 <h3 class="team-section__subtitle">Ольга Репина</h3>
                 <p class="team-section__text">Frontend Developer</p>
@@ -462,12 +467,13 @@
               </div>
             </li>
             <li class="team-section__item item-box">
-              <img
-                src="./images/img2(1).jpg"
-                alt="Фото 3 секції"
-
-                class="team-section__image"
-              />
+              <picture>
+                <source media="(min-width: 1280px)" srcset="./images/team/df-three270.jpg 1x, ./images/team/df-three540@2x-5.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/tf-three.jpg 1x, ./images/team/tf-three@2x-2.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/mb-three450.jpg 1x, ./images/team/mb-three900@2x-2.jpg 2x">
+              <img src="./images/team/mb-three450.jpg" alt="foto one" width="450"
+              height="460">
+              </picture>
               <div class="team-section__inf">
                 <h3 class="team-section__subtitle">Николай Тарасов</h3>
                 <p class="team-section__text">Marketing</p>
@@ -539,11 +545,13 @@
               </div>
             </li>
             <li class="team-section__item item-box">
-              <img
-                src="./images/img4(1).jpg"
-                alt="Фото 4 секції"
-                class="team-section__image"
-              />
+              <picture>
+                <source media="(min-width: 1280px)" srcset="./images/team/df-four270.jpg 1x, ./images/team/df-four540@2x-6.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/tf-four354.jpg 1x, ./images/team/tf-four708@2x-3.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/mb-four450.jpg 1x, ./images/team/mb-four900@2x-3.jpg 2x">
+              <img src="./images/team/mb-four450.jpg" alt="foto one" width="450"
+              height="460">
+              </picture>
               <div class="team-section__inf">
                 <h3 class="team-section__subtitle">Михаил Ермаков</h3>
                 <p class="team-section__text">UI Designer</p>
