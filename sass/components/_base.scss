@@ -3,6 +3,10 @@ body {
   color: var(--title-color);
   font-family: "Roboto", sans-serif;
   background-color: var(--main-color);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 button {
@@ -14,6 +18,8 @@ img {
   width: 100%;
   height: auto;
 }
+
+
 
 .section {
   padding-top: 60px;
@@ -49,9 +55,15 @@ img {
 .team-section__title,
 .customers-section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.178;
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.167;
+  }
+
 }

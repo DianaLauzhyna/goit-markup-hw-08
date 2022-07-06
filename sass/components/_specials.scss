@@ -46,6 +46,9 @@
   }
 
   &__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -53,6 +56,15 @@
     text-transform: uppercase;
     color: var(--title-color);
     padding-bottom: 10px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) { 
+  display: block;
+    }
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
+
+
   }
   &__text {
     font-size: 14px;

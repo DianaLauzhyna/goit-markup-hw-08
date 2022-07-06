@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-  <header>
-    <div class="container header-dekstop-tablet">
+    <header>
+      <div class="container header-dekstop-tablet">
         <a href="./index.html" class="logo"
           ><span class="logo__one">Web</span
           ><span class="logo__two">Studio</span></a
@@ -25,22 +25,25 @@
         <nav class="site-nav">
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a href="./index.html" class="current site-nav__link"
-                >Студия</a
-              >
+              <a href="./index.html" class="current site-nav__link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-inf">
           <li class="contact-inf__list">
             <a href="mailto:info@example.com" class="contact-inf__link">
-              <svg class="contact-inf__icon" width="16px" height="12px" fill="#757575">
+              <svg
+                class="contact-inf__icon"
+                width="16px"
+                height="12px"
+                fill="#757575"
+              >
                 <use href="./images/svg_icons/sprite.svg#mailletter"></use>
               </svg>
               info@example.com</a
@@ -61,32 +64,23 @@
         </ul>
       </div>
 
-
-
-      <div class="container mobile-header"> 
+      <div class="container mobile-header">
         <a href="./index.html" class="mobile-header__logo"
           ><span class="mobile-header__logo-one">Web</span
           ><span class="mobile-header__logo-two">Studio</span></a
         >
-        <div class="mobile-header__menu"><button type="button" class="mobile-header__button" data-menu-button>
-          <svg class="mobile-header__icon" width="24px" height="16px" >
-            <use href="./images/svg_icons/sprite.svg#menu"></use>
-          </svg>
-        </button></div>
-
-      </div>
-
-
-
-    <div class="mobile-menu " data-menu>
-          <div class="mobile-menu__close">
-          <button type="button" class="mobile-menu__button">
-            <svg class="mobile-menu-button-close__icon" width="18px" height="18px" fill="#000000">
-              <use href="./images/svg_icons/sprite.svg#close"></use>
+        <div class="mobile-header__menun">
+          <button type="button" class="mobile-header__button play_btn" data-menu-button>
+            <svg class="mobile-header__icon" width="24px" height="16px">
+              <use href="./images/svg_icons/sprite.svg#menu" class="menu-open"></use>
+              <use href="./images/svg_icons/sprite.svg#close" class="menu-close"></use>
             </svg>
           </button>
-                </div>
-        <div class="mobile-menu__container">
+        </div>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__container is-open">
           <nav class="mobile-nav">
             <ul class="mobile-nav__list">
               <li class="mobile-nav__item">
@@ -99,224 +93,287 @@
                   >Портфолио</a
                 >
               </li>
-              <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Контакты</a>
+              </li>
             </ul>
           </nav>
           <ul class="mobile-inf">
             <li class="mobile-inf__list">
               <a href="tel:+380991111111" class="mobile-inf__link-tel">
-                +38 099 111 11 11</a>
+                +38 099 111 11 11</a
+              >
             </li>
             <li class="mobile-inf__list">
-            <a href="mailto:info@example.com" class="mobile-inf__link-mail">
-              info@example.com</a
-            >
+              <a href="mailto:info@example.com" class="mobile-inf__link-mail">
+                info@example.com</a
+              >
             </li>
-        <ul class="mobile-socials">
-          <li class="mobile-socials__item"></li>
-          <a href="" class="mobile-socials__link">Instagram</a>
-          <li class="mobile-socials__item"></li>
-          <a href="" class="mobile-socials__link">Twitter</a>
-          <li class="mobile-socials__item"></li>
-          <a href="" class="mobile-socials__link">Facebook</a>
-          <li class="mobile-socials__item"></li>
-          <a href="" class="mobile-socials__link">Linkedin</a>
-        </ul>
+          </ul>
+          <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link">Linkedin</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
-     <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <div class="modal__close">
-          <button type="button" class="button-close modal__button " data-modal-close>
-            <svg class="button-close__icon" width="18px" height="18px" fill="#000000">
-              <use href="./images/svg_icons/sprite.svg#close"></use>
-            </svg>
-          </button>
-     </div>
-          <h2 class="modal__title">
-              Оставьте свои данные, мы вам перезвоним
-            </h2>
-            <div class="modal__form">
-      <form name="service-form" autocomplete="on" novalidate>
-         <div class="modal__name">             
-            <label for="name" class="modal__label">Имя </label>
-            <input type="text" name="name" id="name" class="modal__input"/>
-          <svg
-            class="modal__icon"
-            width="18px"
-            height="18px"
-            fill="#212121"
-            focusable="false" 
-          >
-            <use href="./images/svg_icons/sprite.svg#person-black"></use></svg>
-         </div>
-          <div class="modal__tel">              
-             <label for="tel" class="modal__label">Телефон</label>
-              <input type="tel" name="tel" id="tel" class="modal__input"
-            />
-            <svg
-            class="modal__icon"
-            width="18px"
-            height="18px"
-            fill="#212121"
-          >
-            <use href="./images/svg_icons/sprite.svg#phone-black"></use></svg>
+            <button
+              type="button"
+              class="button-close modal__button"
+              data-modal-close
+            >
+              <svg
+                class="button-close__icon"
+                width="18px"
+                height="18px"
+                fill="#000000"
+              >
+                <use href="./images/svg_icons/sprite.svg#close"></use>
+              </svg>
+            </button>
           </div>
-          <div class="modal__mail">
-            <label for="mail" class="modal__label">Почта</label>
-              <input type="email" name="mail" id="mail" class="modal__input"
-            />
-            <svg
-            class="modal__icon"
-            width="18px"
-            height="18px"
-            fill="#212121"
-            focusable="false"
-          >
-            <use href="./images/svg_icons/sprite.svg#email-black"></use></svg>
+          <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="modal__form">
+            <form name="service-form" autocomplete="on" novalidate>
+              <div class="modal__name">
+                <label for="name" class="modal__label">Имя </label>
+                <input type="text" name="name" id="name" class="modal__input" />
+                <svg
+                  class="modal__icon"
+                  width="18px"
+                  height="18px"
+                  fill="#212121"
+                  focusable="false"
+                >
+                  <use href="./images/svg_icons/sprite.svg#person-black"></use>
+                </svg>
+              </div>
+              <div class="modal__tel">
+                <label for="tel" class="modal__label">Телефон</label>
+                <input type="tel" name="tel" id="tel" class="modal__input" />
+                <svg
+                  class="modal__icon"
+                  width="18px"
+                  height="18px"
+                  fill="#212121"
+                >
+                  <use href="./images/svg_icons/sprite.svg#phone-black"></use>
+                </svg>
+              </div>
+              <div class="modal__mail">
+                <label for="mail" class="modal__label">Почта</label>
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  class="modal__input"
+                />
+                <svg
+                  class="modal__icon"
+                  width="18px"
+                  height="18px"
+                  fill="#212121"
+                  focusable="false"
+                >
+                  <use href="./images/svg_icons/sprite.svg#email-black"></use>
+                </svg>
+              </div>
+              <div class="modal__text">
+                <label for="comment" class="modal__label">
+                  Комментарий
+                  <textarea
+                    name="comment"
+                    rows="5"
+                    placeholder="Введите текст"
+                    class="modal__textarea"
+                  ></textarea>
+                </label>
+              </div>
+            </form>
           </div>
-            <div class="modal__text">             
-               <label for="comment" class="modal__label">
-              Комментарий
-                <textarea
-                name="comment"
-                rows="5"
-                placeholder="Введите текст"
-                class="modal__textarea"
-              ></textarea></label >
-            </div>
-          </form>
-            </div>
-        <label class="modal__checkbox modal-checkbox"> 
-          <input type="checkbox" name="modal-checkbox" class="modal-checkbox__input visually-hidden">
-          <span class="modal-checkbox__span"><svg
-          class="modal-checkbox__icon"
-          width="11px"
-          height="8px"
-          fill="#ffffff"
-        >
-          <use href="./images/svg_icons/sprite.svg#vector"></use></svg> 
-        </span> 
-          <span class="modal-checkbox__text">Соглашаюсь с рассылкой и принимаю&nbsp <a href="" class="modal-checkbox__agreement"> Условия договора</a></span> 
-      </label>
-      <button class="modal__submit" type="submit">Отправить</button>
+          <label class="modal__checkbox modal-checkbox">
+            <input
+              type="checkbox"
+              name="modal-checkbox"
+              class="modal-checkbox__input visually-hidden"
+            />
+            <span class="modal-checkbox__span"
+              ><svg
+                class="modal-checkbox__icon"
+                width="11px"
+                height="8px"
+                fill="#ffffff"
+              >
+                <use href="./images/svg_icons/sprite.svg#vector"></use>
+              </svg>
+            </span>
+            <span class="modal-checkbox__text"
+              >Соглашаюсь с рассылкой и принимаю&nbsp
+              <a href="" class="modal-checkbox__agreement">
+                Условия договора</a
+              ></span
+            >
+          </label>
+          <button class="modal__submit" type="submit">Отправить</button>
+        </div>
       </div>
-    </div>
       <section class="section hero-section">
         <h1 class="hero-section__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-          <button data-modal-open type="button" class=" hero-section__button">
-            Заказать услугу
-          </button>
+        <button data-modal-open type="button" class="hero-section__button">
+          Заказать услугу
+        </button>
       </section>
-      
+
       <section class="container section specials-section">
-          <h2 class="specials-section__title">Особенности</h2>
-          <ul class="specials-section__list">
-            <li class="specials-section__item">
-              <div class="specials-section__icon">
-                <svg width="70px" height="70px">
-                  <use href="./images/svg_icons/sprite.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="specials-section__subtitle">Внимание к деталям</h3>
-              <p class="specials-section__text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="specials-section__item">
-              <div class="specials-section__icon">
-                <svg width="70px" height="70px">
-                  <use href="./images/svg_icons/sprite.svg#clock"></use>
-                </svg>
-              </div>
-              <h3 class="specials-section__subtitle">Пунктуальность</h3>
-              <p class="specials-section__text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="specials-section__item">
-              <div class="specials-section__icon">
-                <svg width="70px" height="70px">
-                  <use href="./images/svg_icons/sprite.svg#diagram"></use>
-                </svg>
-              </div>
-              <h3 class="specials-section__subtitle">Планирование</h3>
-              <p class="specials-section__text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="specials-section__item">
-              <div class="specials-section__icon">
-                <svg width="70px" height="70px">
-                  <use href="./images/svg_icons/sprite.svg#astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="specials-section__subtitle">Современные технологии</h3>
-              <p class=" specials-section__text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
+        <h2 class="specials-section__title">Особенности</h2>
+        <ul class="specials-section__list">
+          <li class="specials-section__item">
+            <div class="specials-section__icon">
+              <svg width="70px" height="70px">
+                <use href="./images/svg_icons/sprite.svg#antenna"></use>
+              </svg>
+            </div>
+            <h3 class="specials-section__subtitle">Внимание к деталям</h3>
+            <p class="specials-section__text">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="specials-section__item">
+            <div class="specials-section__icon">
+              <svg width="70px" height="70px">
+                <use href="./images/svg_icons/sprite.svg#clock"></use>
+              </svg>
+            </div>
+            <h3 class="specials-section__subtitle">Пунктуальность</h3>
+            <p class="specials-section__text">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li class="specials-section__item">
+            <div class="specials-section__icon">
+              <svg width="70px" height="70px">
+                <use href="./images/svg_icons/sprite.svg#diagram"></use>
+              </svg>
+            </div>
+            <h3 class="specials-section__subtitle">Планирование</h3>
+            <p class="specials-section__text">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="specials-section__item">
+            <div class="specials-section__icon">
+              <svg width="70px" height="70px">
+                <use href="./images/svg_icons/sprite.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="specials-section__subtitle">Современные технологии</h3>
+            <p class="specials-section__text">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
       </section>
 
-
-     <section class=" section container services-section" >
-          <h2 class="services-section__title">Чем мы занимаемся</h2>
-          <ul class="services-section__list">
-            <li class="services-section__item">
-                <img  
-          srcset="./images/dekstop_image/dekstop-service-image-one.jpg 1x, ./images/dekstop_image/dekstop-service-image-one@2x.jpg 2x"
-                src="./images/dekstop_image/dekstop-service-image-one.jpg "
-                  alt="Фото 1 секції"
-                  width="370"
-                  height="294"
-                />
+      <section class="section container services-section">
+        <h2 class="services-section__title">Чем мы занимаемся</h2>
+        <ul class="services-section__list">
+          <li class="services-section__item">
+            <img
+              srcset="
+                ./images/dekstop_image/dekstop-service-image-one.jpg    1x,
+                ./images/dekstop_image/dekstop-service-image-one@2x.jpg 2x
+              "
+              src="./images/dekstop_image/dekstop-service-image-one.jpg "
+              alt="Фото 1 секції"
+              width="370"
+              height="294"
+            />
             <h3 class="services-section__subtitle">Десктопные приложения</h3>
-            </li>
-            <li class="services-section__item" >
-                <img
-    srcset="./images/dekstop_image/dekstop-service-image-two.jpg 1x, ./images/dekstop_image/dekstop-service-image-two@2x-1.jpg 2x"
-                  src="./images/dekstop_image/dekstop-service-image-two.jpg"
-                  alt="Фото 2 секції"
-                  width="370"
-                  height="294"
-                />
+          </li>
+          <li class="services-section__item">
+            <img
+              srcset="
+                ./images/dekstop_image/dekstop-service-image-two.jpg      1x,
+                ./images/dekstop_image/dekstop-service-image-two@2x-1.jpg 2x
+              "
+              src="./images/dekstop_image/dekstop-service-image-two.jpg"
+              alt="Фото 2 секції"
+              width="370"
+              height="294"
+            />
             <h3 class="services-section__subtitle">Мобильные приложения</h3>
-            </li>
-            <li class="services-section__item">
-                <img    srcset="./images/dekstop_image/dekstop-service-image-three.jpg 1x, ./images/dekstop_image/dekstop-service-image-three@2x-2.jpg 2x"
-                src="./images/dekstop_image/dekstop-service-image-three.jpg "
-                  alt="Фото 3 секції"
-                  width="370"
-                  height="294"
-                />
+          </li>
+          <li class="services-section__item">
+            <img
+              srcset="
+                ./images/dekstop_image/dekstop-service-image-three.jpg      1x,
+                ./images/dekstop_image/dekstop-service-image-three@2x-2.jpg 2x
+              "
+              src="./images/dekstop_image/dekstop-service-image-three.jpg "
+              alt="Фото 3 секції"
+              width="370"
+              height="294"
+            />
             <h3 class="services-section__subtitle">Дизайнерские решения</h3>
-            </li>
-          </ul>
+          </li>
+        </ul>
       </section>
-
 
       <section class="section team-section">
         <div class="container">
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__item item-box">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="./images/team/df-one270.jpg 1x, ./images/team/df-one540@2x-3.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./images/team/tf-one.jpg 1x, ./images/team/tf-one@2x.jpg 2x">
-              <source media="(max-width: 767px)" srcset="./images/team/mb-one450.jpg 1x, ./images/team/mb-one900@2x.jpg 2x">
-            <img src="./images/team/mb-one450.jpg" alt="foto one" width="450"
-            height="460">
-            </picture>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/team/df-one270.jpg      1x,
+                    ./images/team/df-one540@2x-3.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tf-one.jpg    1x,
+                    ./images/team/tf-one@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mb-one450.jpg    1x,
+                    ./images/team/mb-one900@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/mb-one450.jpg"
+                  alt="foto one"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-section__inf">
                 <h3 class="team-section__subtitle">Игорь Демьяненко</h3>
                 <p class="team-section__text">Product Designer</p>
@@ -389,11 +446,33 @@
             </li>
             <li class="team-section__item item-box">
               <picture>
-                <source media="(min-width: 1280px)" srcset="./images/team/df-two270.jpg 1x, ./images/team/df-two540@2x-4.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./images/team/tf-two.jpg 1x, ./images/team/tf-two@2x-1.jpg 2x">
-                <source media="(max-width: 767px)" srcset="./images/team/mb-two450.jpg 1x, ./images/team/mb-two900@2x-1.jpg 2x">
-              <img src="./images/team/mb-two450.jpg" alt="foto one" width="450"
-              height="460">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/team/df-two270.jpg      1x,
+                    ./images/team/df-two540@2x-4.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tf-two.jpg      1x,
+                    ./images/team/tf-two@2x-1.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mb-two450.jpg      1x,
+                    ./images/team/mb-two900@2x-1.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/mb-two450.jpg"
+                  alt="foto one"
+                  width="450"
+                  height="460"
+                />
               </picture>
 
               <div class="team-section__inf">
@@ -468,11 +547,33 @@
             </li>
             <li class="team-section__item item-box">
               <picture>
-                <source media="(min-width: 1280px)" srcset="./images/team/df-three270.jpg 1x, ./images/team/df-three540@2x-5.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./images/team/tf-three.jpg 1x, ./images/team/tf-three@2x-2.jpg 2x">
-                <source media="(max-width: 767px)" srcset="./images/team/mb-three450.jpg 1x, ./images/team/mb-three900@2x-2.jpg 2x">
-              <img src="./images/team/mb-three450.jpg" alt="foto one" width="450"
-              height="460">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/team/df-three270.jpg      1x,
+                    ./images/team/df-three540@2x-5.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tf-three.jpg      1x,
+                    ./images/team/tf-three@2x-2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mb-three450.jpg      1x,
+                    ./images/team/mb-three900@2x-2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/mb-three450.jpg"
+                  alt="foto one"
+                  width="450"
+                  height="460"
+                />
               </picture>
               <div class="team-section__inf">
                 <h3 class="team-section__subtitle">Николай Тарасов</h3>
@@ -546,11 +647,33 @@
             </li>
             <li class="team-section__item item-box">
               <picture>
-                <source media="(min-width: 1280px)" srcset="./images/team/df-four270.jpg 1x, ./images/team/df-four540@2x-6.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./images/team/tf-four354.jpg 1x, ./images/team/tf-four708@2x-3.jpg 2x">
-                <source media="(max-width: 767px)" srcset="./images/team/mb-four450.jpg 1x, ./images/team/mb-four900@2x-3.jpg 2x">
-              <img src="./images/team/mb-four450.jpg" alt="foto one" width="450"
-              height="460">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/team/df-four270.jpg      1x,
+                    ./images/team/df-four540@2x-6.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tf-four354.jpg      1x,
+                    ./images/team/tf-four708@2x-3.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mb-four450.jpg      1x,
+                    ./images/team/mb-four900@2x-3.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/mb-four450.jpg"
+                  alt="foto one"
+                  width="450"
+                  height="460"
+                />
               </picture>
               <div class="team-section__inf">
                 <h3 class="team-section__subtitle">Михаил Ермаков</h3>
@@ -625,7 +748,7 @@
           </ul>
         </div>
       </section>
-     <section class="section container customers-section">
+      <section class="section container customers-section">
         <h2 class="customers-section__title">Постоянные клиенты</h2>
         <ul class="customers-section__list">
           <li class="customers-section__item">
@@ -811,11 +934,7 @@
                 rel="noopener noreferrer"
                 aria-label="facebook"
               >
-                <svg
-                  class="socials-footer__icon"
-                  width="20px"
-                  height="20px"
-                >
+                <svg class="socials-footer__icon" width="20px" height="20px">
                   <use href="./images/svg_icons/sprite.svg#facebook"></use></svg
               ></a>
             </li>
@@ -843,26 +962,28 @@
           <ul class="subscription__list">
             <li class="subscription__item">
               <form clas="subscription__form">
-                <label for="email-subscription" class=" subscription__mail">
-                  <input type="email" name="email-subscription" id="email-subscription" 
-                  placeholder="E-mail" class="subscription__input"/>
+                <label for="email-subscription" class="subscription__mail">
+                  <input
+                    type="email"
+                    name="email-subscription"
+                    id="email-subscription"
+                    placeholder="E-mail"
+                    class="subscription__input"
+                  />
                 </label>
               </form>
-           </li>
-           <li class="subscription__item">
-          <button type="button" href="" class="subscription__button"> <span class="sub">Подписаться</span>
-            <svg
-              class=""
-              width="20px"
-              height="20px"
-              fill="#ffffff"
-            >
-              <use href="./images/svg_icons/sprite.svg#icon-send"></use></svg
-            >
-          </button>
-         </li>
-         </ul>
+            </li>
+            <li class="subscription__item">
+              <button type="button" href="" class="subscription__button">
+                <span class="sub">Подписаться</span>
+                <svg class="" width="20px" height="20px" fill="#ffffff">
+                  <use href="./images/svg_icons/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
         </div>
+      </div>
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
